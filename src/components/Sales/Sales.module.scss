@@ -1,0 +1,9 @@
+.box{
+    margin-left: 18.5px;
+    display: flex;
+    flex-direction: row;
+
+    &_first{
+        margin-right: 111px;
+    }
+}

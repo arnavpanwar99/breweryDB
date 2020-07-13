@@ -1,0 +1,40 @@
+@import "../../sass/variables";
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+
+    &_child{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+    }
+}
+
+.box{
+    flex: 1;
+
+    &_warn{
+        margin-left: 18.3px;
+        height: 9px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 7px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.29;
+        letter-spacing: normal;
+        text-align: left;
+        color: $marine-blue;
+    }
+
+    &_inputContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 22px;
+        margin-top: 7.5px;
+    }
+}

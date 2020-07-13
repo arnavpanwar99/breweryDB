@@ -1,0 +1,30 @@
+.box{
+    margin-left: 18.5px;
+    display: flex;
+    flex-direction: row;
+
+    &_first{
+        margin-right: 111px;
+    }
+}
+
+.button{
+    margin-left: 18.5px;
+    width: 91px;
+    margin-top: 6px;
+    height: 21px;
+    border-radius: 3px;
+    background-color: #79add5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 7px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}

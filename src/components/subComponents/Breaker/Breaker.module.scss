@@ -1,0 +1,28 @@
+@import "./../../../sass/variables";
+
+.breaker{
+    margin: 13.5px 60.5px 13.5px 18.3px;
+
+    &_text{
+        width: 80.5px;
+        height: 14.5px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.21;
+        letter-spacing: normal;
+        text-align: left;
+        color: $marine-blue;
+        text-transform: uppercase;
+    }
+
+    &_line{
+        width: 100%;
+        margin: 0;
+        background-color: #79add5;
+        border: none;
+        height: 2px;
+    }
+}

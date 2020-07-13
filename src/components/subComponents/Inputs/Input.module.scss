@@ -1,0 +1,226 @@
+@import "../../../sass/variables";
+
+.dropDown{
+
+    &_label{
+        height: 9px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 7px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.29;
+        letter-spacing: normal;
+        text-align: left;
+        color: $marine-blue;
+    }
+
+    &_input{
+        width: 138px;
+        height: 20px;
+        font-size: 7px;
+        border: none;
+        color: rgba(0, 59, 113, 0.5);
+        border-radius: 1.5px;
+        background-color: #e9f1f8;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding: 5px;
+
+        &::-ms-expand{
+            display: none;
+        }
+    }
+}
+
+.range{
+
+    &_input{
+        width: 57px;
+        border: none;
+        height: 20px;
+        border-radius: 1.5px;
+        background-color: #e9f1f8;
+
+    }
+
+    &_dash{
+        height: 20px;
+        margin: auto 15px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.21;
+        letter-spacing: normal;
+        text-align: left;
+        color: $marine-blue;
+    }
+}
+
+
+.toggle{
+    display: flex;
+    flex-direction: row;
+    
+    &_switch{
+        width: 20px;
+        height: 10px;
+        font-size: 10px;
+        border-radius: 10px;
+        border: solid 0.5px $marine-blue;
+        background-color: #e8f0f7;
+        position: relative;
+        margin: 0 12.5px;
+    }
+
+    &_input{
+        height: 10px;
+        width: 20px;
+        opacity: 0;
+    }
+
+    &_slider{
+        position: absolute;
+        width: 7.5px;
+        height: 7.5px;
+        top:50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+    }
+
+    &_input:checked + &_slider{
+        right: 1.5px;
+        background-color: $marine-blue;
+    }
+
+    &_input:not(:checked) + &_slider{
+        left: 1.5px;
+        background-color: #79add5;
+    }
+
+    &_text{
+        font-family: "Montserrat", sans-serif;
+        font-size: 9px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22;
+        letter-spacing: normal;
+        text-align: left;
+        color: #144a7b;
+        width: 31px;
+    }
+}
+
+
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &_input{
+        height: 10px;
+        width: 10px;
+        border-radius: 1.5px;
+        border: solid .5px #79add5;
+        background-color: #e9f1f8;
+    }
+
+    &_label{
+        height: 8.5px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 7px;
+        align-items: center;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.29;
+        letter-spacing: normal;
+        text-align: left;
+        color: $marine-blue;
+    }
+}
+
+.special{
+    position: relative;
+
+    &_text{
+        left: 50%;
+        top: -10px;
+        transform: translateX(-50%);
+        position: absolute;
+        width: 30px;
+        height: 9px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 7px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.29;
+        letter-spacing: normal;
+        text-align: left;
+        color: $marine-blue;
+    }
+
+    &_specialInput{
+        width: 138px;
+        height: 15.5px;
+        border: none;
+        border-radius: 1.5px;
+        background-color: #e9f1f8;
+        font-family: "Montserrat", sans-serif;
+        font-size: 7px;
+        padding-left: 7px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.29;
+        letter-spacing: normal;
+        text-align: left;
+        color: rgba(0, 59, 113, 0.5);
+    
+        &:read-only{
+            background-color: rgba(160, 160, 160, 0.34);
+        }
+    }
+}
+
+.secondaryInput{
+    display: flex;
+    flex-direction: column;
+
+    &_text{
+        width: 97.5px;
+        height: 9px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 7px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.29;
+        letter-spacing: normal;
+        text-align: left;
+        color: $marine-blue;
+    }
+    &_input{
+        width: 195px;
+        height: 25px;
+        border-radius: 1.5px;
+        background-color: #e9f1f8;
+        font-family: "Montserrat", sans-serif;
+        font-size: 9px;
+        padding-left: 7px;
+        border: none;
+        margin-right: 47.5px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22;
+        letter-spacing: normal;
+        text-align: left;
+        color: rgba(0, 59, 113, 0.5);
+    }
+}
