@@ -2,9 +2,9 @@ import React from 'react';
 
 import s from './Card.module.scss';
 
-const Card = ({children}) => {
+const Card = ({children, plain=false}) => {
     return(
-        <section className = {s.card}>
+        <section style={plain?{padding: '0 0 16px 0'}:{}} className = {s.card}>
             {children}
         </section>
     )

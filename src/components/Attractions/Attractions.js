@@ -3,6 +3,7 @@ import React from 'react';
 import s from './Attractions.module.scss';
 import Breaker from '../subComponents/Breaker/Breaker';
 import { DropDown } from '../subComponents/Inputs/Inputs';
+import { PrimaryButton } from '../subComponents/Widgets/Widgets';
 
 const Attractions = () => {
     return(
@@ -14,9 +15,7 @@ const Attractions = () => {
                 </span>
                 <DropDown label='Select Distance' />
             </div>
-            <div className={s.button}>
-                Add Another Attraction
-            </div>
+            <PrimaryButton text = 'Add Another Attraction' />
         </>
     )
 };

@@ -14,3 +14,22 @@ const Breaker = ({text = 'Anonymous', short=false}) => {
 };
 
 export default Breaker;
+
+export const SecondaryBreaker = ({text='Anonymous'}) => {
+    return(
+        <div className={s.secondaryBreaker}>
+            <span className={s.secondaryBreaker_text}>
+                {text}
+            </span>
+        </div>
+    )
+}
+
+export const TertiaryBreaker = ({text='Anonymous'}) => {
+    return(
+        <div className={s.tertiaryText}>
+            {text}
+        </div>
+
+    )
+}

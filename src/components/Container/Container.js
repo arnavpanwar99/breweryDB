@@ -13,6 +13,12 @@ import WhoWelcome from '../WhoWelcome/WhoWelcome';
 import Attractions from '../Attractions/Attractions';
 import Sales from '../Sales/Sales';
 import Events from '../Events/Events';
+import Guild from '../Guild/Guild';
+import Festivals from '../Festivals/Festivals';
+import Mailing from '../Mailing/Mailing';
+import History from '../History/History';
+import { FinishButton } from '../subComponents/Widgets/Widgets';
+import Modal from '../Modal/Modal';
 
 const Container = () => {
     return(
@@ -33,9 +39,13 @@ const Container = () => {
                     <Events />
                 </Board>
             </Card>
-            <Card>
-                
+            <Card plain>
+                <Guild />
+                <Festivals />
+                <Mailing />
+                <History />
             </Card>
+            <FinishButton last />
         </div>
     )
 };

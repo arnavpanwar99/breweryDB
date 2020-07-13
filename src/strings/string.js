@@ -33,3 +33,27 @@ export const seatingOption = [
     'Reservations Available',
     'Call-Ahead Seating'
 ];
+
+
+export const modalData = [{
+    image: 'baking',
+    title: 'Baking'
+}, {
+    image: 'bike',
+    title: 'Cycling'
+}, {
+    image: 'bullet',
+    title: 'Shooting'
+}, {
+    image: 'card-game',
+    title: 'Cards'
+}, {
+    image: 'game-boy-advance',
+    title: 'Gaming'
+}, {
+    image: 'meditation',
+    title: 'Yoga'
+}, {
+    image: 'mountain',
+    title: 'Hiking'
+}, ]

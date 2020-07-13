@@ -224,3 +224,79 @@
         color: rgba(0, 59, 113, 0.5);
     }
 }
+
+.textInput{
+    display: flex;
+    flex-direction: column;
+
+    &_label{
+        height: 9px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 7px;
+        margin-bottom: 4.5px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.29;
+        letter-spacing: normal;
+        text-align: left;
+        color: $marine-blue;
+    }
+
+    &_input{
+        width: 386.5px;
+        border: none;
+        height: 25px;
+        border-radius: 1.5px;
+        background-color: #e9f1f8;
+        padding: 8px 0 6px 7px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 9px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22;
+        letter-spacing: normal;
+        text-align: left;
+        color: rgba(0, 59, 113, 0.5);
+    }
+}
+
+
+.textarea{
+    display: flex;
+    flex-direction: column;
+
+    &_label{
+        height: 9px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 7px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.29;
+        letter-spacing: normal;
+        text-align: left;
+        margin-bottom: 3px;
+        color: $marine-blue;
+    }
+
+    &_text{
+        width: 387.5px;
+        height: 76px;
+        border: none;
+        resize: none;
+        border-radius: 2px;
+        background-color: #e9f1f8;
+        font-family: "Montserrat", sans-serif;
+        padding: 9px 29px 23px 8.5px;
+        font-size: 9px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22;
+        letter-spacing: normal;
+        text-align: left;
+        color: rgba(0, 59, 113, 0.5);
+    }
+}

@@ -70,3 +70,27 @@ export const SecondaryInput = ({label = 'Enter...'}) => {
         </div>
     )
 }
+
+export const TextInput = ({placeholder = 'Name', label = false, short = false}) => {
+    return(
+        <div className={s.textInput}>
+            {label && <label className={s.textInput_label} htmlFor={placeholder}>{label}</label>}
+            <input
+             name={placeholder}
+             id={placeholder}
+             style={short?{width: '157.5px'}:{}} 
+             placeholder={placeholder} 
+             className={s.textInput_input} 
+            />
+        </div>
+    )
+}
+
+export const TextArea = ({text = 'Here goes a paragraph', placeholder='Describe'}) => {
+    return(
+        <div className={s.textarea}>
+            <label htmlFor={placeholder} className={s.textarea_label}>{placeholder}</label>
+            <textarea className={s.textarea_text} value={text} placeholder={placeholder} />
+        </div>
+    )
+}

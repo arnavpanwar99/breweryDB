@@ -28,11 +28,43 @@ export const PrimaryText = ({text = 'text', secondary=false}) => {
     )
 } 
 
-export const AddEvent = ({text = 'Add an event', disabled = false}) => {
+export const AddEvent = ({text = 'Add an event', disabled = false, onClick}) => {
     return(
-        <div className={s.event}>
+        <div onClick={onClick} className={s.event}>
             <div className={s.event_circle}>+</div>
             <span className={s.event_text}>{text}</span>
+        </div>
+    )
+}
+
+export const PrimaryButton = ({text = 'Start', simple = false}) => {
+    return(
+        <div style={simple?{marginLeft: 0}:{}} className={s.primaryButton}>
+            {text}
+        </div>
+    )
+}
+
+export const FinishButton = ({text = 'Finish', last = false}) => {
+    return(
+        <div style={last?{marginLeft: '600px'}:{}} className={s.finishButton}>
+            {text}
+        </div>
+    )
+};
+
+export const DarkButton = ({text = 'Cancel', onClick}) => {
+    return(
+        <div onClick={onClick} className={s.darkButton}>
+            {text}
+        </div>
+    )
+}
+
+export const LightButton = ({text = 'Finish'}) => {
+    return(
+        <div className={s.lightButton}>
+            {text}
         </div>
     )
 }
