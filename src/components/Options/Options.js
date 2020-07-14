@@ -27,7 +27,7 @@ const List = ({heading='options', options={}}) => {
             <span className={s.box_warn}>Check all that apply</span>
             <div className={s.box_inputContainer}>
                 {options.map(option => (
-                    <CheckBox label={option} />
+                    <CheckBox key={option} label={option} />
                 ))}
             </div>
         </div>

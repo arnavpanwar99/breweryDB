@@ -15,9 +15,9 @@ const Breaker = ({text = 'Anonymous', short=false}) => {
 
 export default Breaker;
 
-export const SecondaryBreaker = ({text='Anonymous'}) => {
+export const SecondaryBreaker = ({text='Anonymous', small=false}) => {
     return(
-        <div className={s.secondaryBreaker}>
+        <div style={small?{fontSize:'7px', padding: 0, margin: '0 0 7px 0', height: '12px'}:{}} className={s.secondaryBreaker}>
             <span className={s.secondaryBreaker_text}>
                 {text}
             </span>
@@ -25,9 +25,9 @@ export const SecondaryBreaker = ({text='Anonymous'}) => {
     )
 }
 
-export const TertiaryBreaker = ({text='Anonymous'}) => {
+export const TertiaryBreaker = ({text='Anonymous', tiny=false}) => {
     return(
-        <div className={s.tertiaryText}>
+        <div style={tiny?{margin: 0, fontSize: '9px', height: '19px'}:{}} className={s.tertiaryText}>
             {text}
         </div>
 

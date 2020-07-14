@@ -37,9 +37,9 @@ export const AddEvent = ({text = 'Add an event', disabled = false, onClick}) => 
     )
 }
 
-export const PrimaryButton = ({text = 'Start', simple = false}) => {
+export const PrimaryButton = ({text = 'Start', simple = false, onClick}) => {
     return(
-        <div style={simple?{marginLeft: 0}:{}} className={s.primaryButton}>
+        <div onClick={onClick} style={simple?{marginLeft: 0}:{}} className={s.primaryButton}>
             {text}
         </div>
     )
