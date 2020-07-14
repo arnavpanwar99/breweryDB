@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import s from './Input.module.scss';
 
@@ -20,22 +20,23 @@ export const Range = ({label = 'label'}) => {
         <div>
             <label className={s.dropDown_label}>{label}</label>
             <br />
-            <input  className={s.range_input}/>
+            <input placeholder='$5.00' className={s.range_input}/>
             <span className={s.range_dash} >-</span>
-            <input  className={s.range_input}/>
+            <input placeholder='$25.00' className={s.range_input}/>
         </div>
     )
 };
 
 export const Toggle = ({checked, hideLabel = false}) => {
+    const [show, toggleShow] = useState(true);
     return(
         <div className={s.toggle}>
             <label className={s.toggle_switch}>
-                <input type="checkbox" checked={checked} className={s.toggle_input} />
+                <input onClick={()=>toggleShow(!show)} type="checkbox" checked={show} className={s.toggle_input} />
                 <span className={s.toggle_slider}></span>
             </label>
             {!hideLabel && <span className={s.toggle_text}>
-                {checked ? 'Open' : 'Closed'}
+                {show ? 'Open' : 'Closed'}
             </span>}
         </div>
     )
@@ -85,6 +86,7 @@ export const TextInput = ({placeholder = 'Name', label = false, short = false}) 
         </div>
     )
 }
+
 
 export const TextArea = ({text = 'Here goes a paragraph', placeholder='Describe'}) => {
     return(

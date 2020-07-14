@@ -27,10 +27,6 @@
         -moz-appearance: none;
         appearance: none;
         padding: 5px;
-
-        &::-ms-expand{
-            display: none;
-        }
     }
 }
 
@@ -42,7 +38,16 @@
         height: 20px;
         border-radius: 1.5px;
         background-color: #e9f1f8;
-
+        font-family: "Montserrat", sans-serif;
+        font-size: 7px;
+        padding-left: 15px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.29;
+        letter-spacing: normal;
+        text-align: left;
+        color: rgba(0, 59, 113, 0.5);
     }
 
     &_dash{
@@ -127,6 +132,8 @@
         border-radius: 1.5px;
         border: solid .5px #79add5;
         background-color: #e9f1f8;
+        background-color: red;
+        color: red;
     }
 
     &_label{

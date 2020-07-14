@@ -4,6 +4,7 @@ import s from './Attractions.module.scss';
 import Breaker from '../subComponents/Breaker/Breaker';
 import { DropDown } from '../subComponents/Inputs/Inputs';
 import { PrimaryButton } from '../subComponents/Widgets/Widgets';
+import { distance } from '../../strings/string';
 
 const Attractions = () => {
     return(
@@ -13,7 +14,7 @@ const Attractions = () => {
                 <span className={s.box_first}>
                     <DropDown label='Enter Attraction' />
                 </span>
-                <DropDown label='Select Distance' />
+                <DropDown options={distance} label='Select Distance' />
             </div>
             <PrimaryButton text = 'Add Another Attraction' />
         </>

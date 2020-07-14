@@ -56,4 +56,10 @@ export const modalData = [{
 }, {
     image: 'mountain',
     title: 'Hiking'
-}, ]
+}, ];
+
+export const navigationKeys = ['Get on the map', 'Your Product', 'Build Traffic'];
+
+export const petFriendly = ['Cat', 'Dog', 'All Are Welcome'];
+
+export const distance = ['Less than 1 mile', 'Less than 5 mile'];

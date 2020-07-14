@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Stick from './../Stick/Stick';
 import Header from './../Header/Header';
 import s from './Container.module.scss';
 import Card from '../Card/Card';
@@ -18,12 +19,13 @@ import Festivals from '../Festivals/Festivals';
 import Mailing from '../Mailing/Mailing';
 import History from '../History/History';
 import { FinishButton } from '../subComponents/Widgets/Widgets';
-import Modal from '../Modal/Modal';
+import { navigationKeys } from '../../strings/string';
 
 const Container = () => {
     return(
         <div className = {s.container}>
             <Header />
+            <Stick navigationKeys={navigationKeys} currentPosition={3} maxSize={3} />
             <Card>
                 <Board heading='tour related search filters'>
                     <CostComponent />
